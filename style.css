@@ -5,7 +5,6 @@
     --cor-de-fundo: #00030C;
 }
 
-
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
@@ -17,16 +16,16 @@ body {
 }
 
 .principal {
-
-    background-image: url(img/Background.png);
+    background-image: url("img/Background.png");
     background-repeat: no-repeat;
-    background-size: contain; 
+    background-size: contain;
+    grid-template-columns: 50% 50%;
 }
 
 .container {
-
     height: 100vh;
 }
+
 .container__botao {
     background-color: var(--botao-azul);
     border-radius: 5px;
@@ -35,4 +34,7 @@ body {
     display: block;
 }
 
-
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
